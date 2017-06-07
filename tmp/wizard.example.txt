@@ -1,0 +1,2 @@
+Some constant text: #\{Insert simple value:default-1\}
+Some other text: #\{Insert other simple value:default-2\}

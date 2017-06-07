@@ -33,7 +33,7 @@ sub tibemsadmin_mangle($);
 sub toupper($);
 sub tolower($);
 
-my $placeholder_regex = "#([epc]*){([^:#}]+)(:([^}#]+))?(#([^}]+))?}";
+my $placeholder_regex = "#([epc]*)\{([^:#\}]+)(:([^\}#]+))?(#([^\}]+))?\}";
 my $placeholder_filter_regex = "#?([^#]+)";
 my (%values, %old_files, %new_files)=((),(),());
 
@@ -63,14 +63,14 @@ foreach my $file (@ARGV) {
 
 
 ## Make Substitutions and get new files
-while (my ($file_name, $raw_data) = each(%old_files)){ 
+while (my ($file_name, $raw_data) = each(%old_files)) { 
   my $newfile = make_substitutions(@$raw_data);
   $file_name=~s/(.*)\..*/$1/;
   $new_files{$file_name}=$newfile; 
 }
 
 ## Write new files
-while (my ($newfile_name, $newfile) = each(%new_files)){
+while (my ($newfile_name, $newfile) = each(%new_files)) {
   open FH, ">$newfile_name" or die "can't open '$newfile_name' for writing: $!"; 
   print FH $_ foreach @$newfile;
   close FH; 
