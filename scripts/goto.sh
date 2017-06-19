@@ -24,10 +24,10 @@ changeDir() {
     done
 }
 
-GOTO_HOME_DIRS="/home/stefanutti/prj"
+GOTO_HOME_DIRS="$PRJ_HOME"
 
-DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 2 -type d | grep -v "\-[0-9]\.[0-9]" | sort | grep -i "$1"`
-NUM_DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 2 -type d | grep -v "\-[0-9]\.[0-9]" | sort | grep -i "$1" | wc -l`
+DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | sort | grep -i "$1"`
+NUM_DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | sort | grep -i "$1" | wc -l`
 
 if [ $NUM_DIRS == 0 ]; then
     echo "nothing found"
