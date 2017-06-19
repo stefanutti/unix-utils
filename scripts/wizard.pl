@@ -33,7 +33,7 @@ sub tibemsadmin_mangle($);
 sub toupper($);
 sub tolower($);
 
-my $placeholder_regex = "#([epc]*)\{([^:#\}]+)(:([^\}#]+))?(#([^\}]+))?\}";
+my $placeholder_regex = "#([epc]*){([^:#}]+)(:([^}#]+))?(#([^}]+))?}";
 my $placeholder_filter_regex = "#?([^#]+)";
 my (%values, %old_files, %new_files)=((),(),());
 
@@ -129,7 +129,7 @@ sub make_substitutions(\@) {
       my $name = trim($2);
       my $previous = $values{$name};
       
-      #Call filter subroutines if present
+      # Call filter subroutines if present
       if (my $filters=$6) {
         while ($filters =~ m/$placeholder_filter_regex/g) {
           my $func = \&{trim($1)};

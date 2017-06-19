@@ -1,3 +1,3 @@
-export HTTP_PROXY=my_proxy:port
-export HTTPS_PROXY=my_proxy:port
-export ALL_PROXY=socks://my_proxy:port/
+export HTTP_PROXY=aaa:8080
+export HTTPS_PROXY=aaa:8080
+export ALL_PROXY=socks://aaa:8080
