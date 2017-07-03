@@ -1,3 +1,3 @@
-export HTTP_PROXY=aaa:8080
-export HTTPS_PROXY=aaa:8080
-export ALL_PROXY=socks://aaa:8080
+export HTTP_PROXY=172.26.0.133:3128
+export HTTPS_PROXY=172.26.0.133:3128
+export ALL_PROXY=socks://172.26.0.133:3128
