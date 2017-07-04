@@ -1,0 +1,4 @@
+[Service]
+Environment="HTTP_PROXY=172.26.0.133:3128"
+Environment="HTTPS_PROXY=172.26.0.133:3128"
+Environment="NO_PROXY=localhost,127.0.0.0/8,docker-registry.somecorporation.com"
