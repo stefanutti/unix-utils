@@ -1,4 +1,14 @@
 [Service]
 Environment="HTTP_PROXY=172.26.0.133:3128"
 Environment="HTTPS_PROXY=172.26.0.133:3128"
+Environment="FTP_PROXY=172.26.0.133:3128"
+Environment="ALL_PROXY=socks://172.26.0.133:3128"
+Environment="SOCKS_PROXY=socks://172.26.0.133:3128"
 Environment="NO_PROXY=localhost,127.0.0.0/8,docker-registry.somecorporation.com"
+
+Environment="http_proxy=172.26.0.133:3128"
+Environment="https_proxy=172.26.0.133:3128"
+Environment="ftp_proxy=172.26.0.133:3128"
+Environment="all_proxy=socks://172.26.0.133:3128"
+Environment="socks_proxy=socks://172.26.0.133:3128"
+Environment="no_proxy=localhost,127.0.0.0/8,docker-registry.somecorporation.com"

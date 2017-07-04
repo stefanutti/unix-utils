@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Author: Mario Stefanutti
+# History:
+# - 02/Feb/2017: First version
+#
 
 #
 # Usage: alias goto=". /path to .../goto.sh"

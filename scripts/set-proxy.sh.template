@@ -1,3 +1,19 @@
+#!/bin/bash
+#
+# Author: Mario Stefanutti
+# History:
+# - 02/Feb/2017: First version
+#
 export HTTP_PROXY=#{proxy hostname:my_proxy}:#{proxy port:8080}
 export HTTPS_PROXY=#{proxy hostname:my_proxy}:#{proxy port:8080}
+export FTP_PROXY=#{proxy hostname:my_proxy}:#{proxy port:8080}
 export ALL_PROXY=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}
+export SOCKS_PROXY=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}
+export NO_PROXY=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}
+
+export http_proxy=#{proxy hostname:my_proxy}:#{proxy port:8080}
+export https_proxy=#{proxy hostname:my_proxy}:#{proxy port:8080}
+export ftp_proxy=#{proxy hostname:my_proxy}:#{proxy port:8080}
+export all_proxy=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}
+export socks_proxy=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}
+export no_proxy=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}

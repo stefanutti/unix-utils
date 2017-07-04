@@ -1,4 +1,14 @@
 [Service]
 Environment="HTTP_PROXY=#{proxy hostname:my_proxy}:#{proxy port:8080}"
 Environment="HTTPS_PROXY=#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="FTP_PROXY=#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="ALL_PROXY=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="SOCKS_PROXY=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}"
 Environment="NO_PROXY=localhost,127.0.0.0/8,docker-registry.somecorporation.com"
+
+Environment="http_proxy=#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="https_proxy=#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="ftp_proxy=#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="all_proxy=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="socks_proxy=socks://#{proxy hostname:my_proxy}:#{proxy port:8080}"
+Environment="no_proxy=localhost,127.0.0.0/8,docker-registry.somecorporation.com"
