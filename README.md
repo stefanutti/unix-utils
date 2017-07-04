@@ -1,9 +1,10 @@
 # unix-utils
 
-This dir contains genaral Unix utilities + docker utilities:
-- TBF
+This repository contains genaral Unix utilities + Docker utilities.
 
-Since Docker runs inside Unix and I have a Windows 8.1 (64bit) machine, I'm using an Ubuntu 16.04 LTM (64bit) virtual machine on VirtualBox 5.1 to host Docker.
+## Docker settings
+
+Since Docker runs inside Unix and I have a Windows (64bit) machine, I'm using an Ubuntu 16.04 LTM (64bit) virtual machine on VirtualBox to host Docker.
 
 For the download of the VMI Ubuntu image I used this site: http://www.osboxes.org/
 
@@ -23,8 +24,8 @@ And then I inslalled Docker, following the instructions here: https://store.dock
 Necessary addons (if not installed)
 - sudo apt-get -y install git
 
-Personal addons
-- git clone https://github.com/stefanutti/docker-utils.git
+Personal addons (this repo)
+- git clone https://github.com/stefanutti/unix-utils.git
 
 In case you are inside a protected network, remember to setup the proxy:
 - Set the proxy in the Ubuntu settings (standard system proxy configuration)
@@ -39,7 +40,16 @@ In case you are inside a protected network, remember to setup the proxy:
       - Environment="HTTP_PROXY=http://proxy.example.com:80/"
     - sudo systemctl daemon-reload
     - sudo systemctl restart docker
-  - Or from the cloned stefanutti/docker-utils directory (clone this repo) run:
-      - set-proxy-xxx.sh (after having customized it for your needs)
-      - set-no-proxy.sh (to disable the proxy for a direct connection)
+  - Or from the cloned stefanutti/unix-utils directory (clone this repo) run:
+      - cd ./unix-utils
+      - cp set-environment.sh.template set-environment.sh
+        - Note: .template files have to be customized
+          - If the environmente has been previously set you can use
+            - wizard set-environment.sh.template (it will automatically generate the set-environment.sh file)
+      - Note: Edit the set-environment.sh and customize the placeholders
+        - export PRJ_HOME="#{Insert root directory for your projects:Not available. To be specified manually}"
+        - export PRJ_HOME="$HOME/gv"
+      - source ./set-environment.sh
+      - . docker-set-proxy.sh (after having customized it for your needs - See note about .template files)
+      - . docker-set-no-proxy.sh (to disable the proxy for a direct connection)
 
