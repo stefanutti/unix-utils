@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Author: I@N
+# Author: I@N 2.0
 # History:
 # - 02/Feb/2017: First version
 #

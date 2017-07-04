@@ -1,4 +1,4 @@
-export PRJ_HOME="$HOME/gv"
+export PRJ_HOME="#{Insert root directory for your projects:Not available. To be specified manually}"
 
 export PATH=.:$PRJ_HOME/unix-utils/scripts:$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
 
