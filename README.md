@@ -50,6 +50,6 @@ In case you are inside a protected network, remember to setup the proxy:
         - export PRJ_HOME="#{Insert root directory for your projects:Not available. To be specified manually}"
         - export PRJ_HOME="$HOME/gv"
       - source ./set-environment.sh
-      - docker-set-proxy.sh (after having customized it for your needs - See note about .template files)
-      - docker-set-no-proxy.sh (to disable the proxy for a direct connection)
+      - . docker-set-proxy.sh (after having customized it for your needs - See note about .template files)
+      - . docker-set-no-proxy.sh (to disable the proxy for a direct connection)
 
