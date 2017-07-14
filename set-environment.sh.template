@@ -1,6 +1,6 @@
 export PRJ_HOME="#{Insert root directory for your projects:Not available. To be specified manually}"
 
-export PATH=.:$PRJ_HOME/unix-utils/scripts:$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
+export PATH=.:$PRJ_HOME/unix-utils/scripts:/usr/local/bin/sage:$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
 
 alias goto=". $PRJ_HOME/unix-utils/scripts/goto.sh"
 alias wizard="perl $PRJ_HOME/unix-utils/scripts/wizard.pl"
