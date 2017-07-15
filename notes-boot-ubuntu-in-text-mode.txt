@@ -2,7 +2,7 @@ To boot Ubuntu 16.04 Desktop without X one:
 - Use ctrl+alt+F1 to switch to terminal
 - login
 - run sudo service lightdm stop, lightdm and xserver should be stopped now
-- check with ctrl+alt+F7, which is your current xorg session, it should not show any desktop now
+  - check with ctrl+alt+F7, which is your current xorg session, it should not show any desktop now
 - do your things
 - run sudo service lightdm start to start lightdm and xorg again
 
