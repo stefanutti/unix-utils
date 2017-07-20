@@ -1,4 +1,6 @@
-| Generic scripts                              | Description                                    |
+This projects contains useful scripts.
+
+| Scripts                                      | Description                                    |
 | -------------------------------------------- | ---------------------------------------------- |
 | goto.sh                                      | Move rapidely from directories defined under $ |
 | wizard.pl                                    | Content Cell                                   |
@@ -7,9 +9,6 @@
 | set-no-proxy.sh                              | Content Cell                                   |
 | set-proxy.sh                                 | Content Cell                                   |
 | set-proxy.sh.template                        | Content Cell                                   |
-
-| Docker script                                | Description                                    |
-| -------------------------------------------- | ---------------------------------------------- |
 | docker-http-proxy.conf.set-no-proxy          | Content Cell                                   |
 | docker-http-proxy.conf.set-no-proxy.template | Content Cell                                   |
 | docker-http-proxy.conf.set-proxy             | Content Cell                                   |
