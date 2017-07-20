@@ -1,19 +1,19 @@
-Scripts:
+| Generic scripts                              | Description                                    |
+| -------------------------------------------- | ---------------------------------------------- |
+| goto.sh                                      | Move rapidely from directories defined under $ |
+| wizard.pl                                    | Content Cell                                   |
+| create-machine-info-report.sh                | Content Cell                                   |
+| enable-xhosts.sh                             | Content Cell                                   |
+| set-no-proxy.sh                              | Content Cell                                   |
+| set-proxy.sh                                 | Content Cell                                   |
+| set-proxy.sh.template                        | Content Cell                                   |
 
-
-| Script                                         | Descriptsion                                    |
-| ---------------------------------------------- |                                                 |
-| create-machine-info-report.sh
-| docker-http-proxy.conf.set-no-proxy |                                                 |
-| docker-http-proxy.conf.set-no-proxy.template |                                                 |
-| docker-http-proxy.conf.set-proxy |                                                 |
-| docker-http-proxy.conf.set-proxy.template |                                                 |
-| docker-restart.sh |                                                 |
-| docker-set-no-proxy.sh |                                                 |
-| docker-set-proxy.sh |                                                 |
-| enable-xhosts.sh |                                                 |
-| goto.sh |                                                 |
-| set-no-proxy.sh |                                                 |
-| set-proxy.sh |                                                 |
-| set-proxy.sh.template |                                                 |
-| wizard.pl |                                                 |
+| Docker script                                | Description                                    |
+| -------------------------------------------- | ---------------------------------------------- |
+| docker-http-proxy.conf.set-no-proxy          | Content Cell                                   |
+| docker-http-proxy.conf.set-no-proxy.template | Content Cell                                   |
+| docker-http-proxy.conf.set-proxy             | Content Cell                                   |
+| docker-http-proxy.conf.set-proxy.template    | Content Cell                                   |
+| docker-restart.sh                            | Content Cell                                   |
+| docker-set-no-proxy.sh                       | Content Cell                                   |
+| docker-set-proxy.sh                          | Content Cell                                   |
