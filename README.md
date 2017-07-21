@@ -2,10 +2,10 @@
 
 This repository contains genaral Unix utilities + Docker utilities.
 
-| Scripts                     | Description                                                   |
-| :---                        | :---                                                          |
-| set-environment.sh          | Script to set the environment                                 |
-| set-environment.sh.template | Configuration template file (see wizard inside the script dir |
+| Scripts                     | Description                                                    |
+| :---                        | :---                                                           |
+| set-environment.sh          | Script to set the environment                                  |
+| set-environment.sh.template | Configuration template file (see wizard inside the script dir) |
 
 ## Info to set docker
 
