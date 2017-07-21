@@ -1,4 +1,4 @@
-This projects contains useful scripts.
+This projects contains these scripts.
 
 | Scripts                                      | Description                                                       |
 | :---                                         | :---                                                              |
