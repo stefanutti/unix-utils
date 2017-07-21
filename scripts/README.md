@@ -1,4 +1,4 @@
-This projects contains these scripts.
+This projects contains these scripts:
 
 | Scripts                                      | Description                                                       |
 | :---                                         | :---                                                              |
@@ -9,9 +9,9 @@ This projects contains these scripts.
 | set-no-proxy.sh                              | Disable proxy                                                     |
 | set-proxy.sh                                 | Enable proxy                                                      |
 | set-proxy.sh.template                        | Configuration template file (see wizard)                          |
-| docker-http-proxy.conf.set-no-proxy          | Disable proxy for Docker & the environment                        |
+| docker-http-proxy.conf.set-no-proxy          | Config file to disable proxy for Docker & the environment         |
 | docker-http-proxy.conf.set-no-proxy.template | Configuration template file (see wizard)                          |
-| docker-http-proxy.conf.set-proxy             | Content Cell                                                      |
+| docker-http-proxy.conf.set-proxy             | Config file to enable proxy for Docker & the environment          |
 | docker-http-proxy.conf.set-proxy.template    | Configuration template file (see wizard)                          |
 | docker-restart.sh                            | Restart Docker (the deamon)                                       |
 | docker-set-no-proxy.sh                       | Script to disable the proxy                                       |
