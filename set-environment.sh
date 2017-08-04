@@ -1,4 +1,4 @@
-export PRJ_HOME="/mario/gv/prj"
+export PRJ_HOME="/mario/prj"
 
 export PATH=.:$PRJ_HOME/unix-utils/scripts:/usr/local/bin/sage:$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
 
