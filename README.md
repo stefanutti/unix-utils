@@ -9,10 +9,10 @@ This repository contains genaral Unix utilities + Docker utilities.
 
 ## Info to set docker
 
-I'm using an Ubuntu 16.04 LTM (64bit) to host Docker.
+I'm using Ubuntu 16.04 LTM (64bit) to host Docker.
 
 Note:
-- if you have Windows consider to use VirtualBox with a VMI Ubuntu image (http://www.osboxes.org)
+- if you have Windows, consider to use VirtualBox with a VMI Ubuntu image (http://www.osboxes.org)
 
 To install Docker follow the instructions here: https://store.docker.com/editions/community/docker-ce-server-ubuntu
 - sudo apt-get -y install apt-transport-https ca-certificates curl
@@ -50,7 +50,7 @@ In case you are inside a protected network, remember to setup the proxy:
       - cd ./unix-utils
       - cp set-environment.sh.template set-environment.sh
         - Note: .template files have to be customized
-          - If the environmente has been previously set you can use wizard to change the environment
+          - If the environment is already set you can use the wizard to change the environment
             - wizard set-environment.sh.template (it will automatically generate the set-environment.sh file)
       - Note: Edit the set-environment.sh and customize the placeholders
         - export PRJ_HOME="#{Insert root directory for your projects:Not available. To be specified manually}"
