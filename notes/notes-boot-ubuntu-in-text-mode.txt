@@ -1,16 +1,7 @@
-To boot Ubuntu 16.04 Desktop without X one: 
+To boot Ubuntu 16.04 Desktop without X server: 
 - Use ctrl+alt+F1 to switch to terminal
 - login
 - run sudo service lightdm stop, lightdm and xserver should be stopped now
   - check with ctrl+alt+F7, which is your current xorg session, it should not show any desktop now
 - do your things
-- run sudo service lightdm start to start lightdm and xorg again
-
-To boot Ubuntu 16.04 Desktop without X one: 
-- Add systemd.unit=multi-user.target to the linux command line in GRUB.
-- To make this the default, use:
-  - sudo systemctl set-default multi-user.target
-- To return to default booting into X, use:
-  - sudo systemctl set-default graphical.target
-- To see the current default target:
-  - sudo systemctl get-default
+- run sudo service lightdm start to start lightdm and X serve again
