@@ -2,6 +2,6 @@ This projects contains these scripts:
 
 | Scripts                                      | Description                                                       |
 | :---                                         | :---                                                              |
-| goto.sh                                      | Move rapidely from directories defined under $PRJ_HOME            |
-| wizard.pl                                    | Convert a "<file>.template" into a "<file>" asking for parameters |
-| create-machine-info-report.sh                | Generates a report for debugging: cpu, disk, memory, etc.         |
+| ril-generate-cksum-file.csh                  | Generate a file with a |
+| ril-check-list-of-files.csh                  | Check                                                             |
+| ril-verify-chsum-file.csh                    | Check                                                             |
