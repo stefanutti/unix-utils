@@ -1,18 +1,28 @@
-export PRJ_HOME="#{Insert root directory for your projects:Not available. To be specified manually}"
+export PRJ_HOME="#{Insert root directory for your projects. To be specified manually}"
 
-export PATH=.:$PRJ_HOME/unix-utils/scripts:/usr/local/bin/sage:$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
-
-# Useful settings
+# General settings
 #
 alias goto=". $PRJ_HOME/unix-utils/scripts/goto.sh"
 alias wizard="perl $PRJ_HOME/unix-utils/scripts/wizard.pl"
+
+export PATH=.:$PRJ_HOME/unix-utils/scripts:$PATH
+
+# + Sage settings
+#
+export PATH=/usr/local/bin/sage:$PATH
+
+# + JMeter settings
+#
+export PATH=$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
+
+# + Maven settings
+#
+export PATH=/mario/my-programs/apache-maven-3.5.0/bin:$PATH
 
 # CUDA settings
 #
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/cuda/lib64
-
-echo "ALL SET"
 
 # Dir colors for linux
 #
@@ -20,7 +30,5 @@ LS_COLORS='rs=0:di=10;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:c
 
 export LS_COLORS
 
-# Commands
-#
-alias h=history
+echo "ALL SET"
 
