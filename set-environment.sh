@@ -1,4 +1,4 @@
-export PRJ_HOME="/mario/prj"
+export PRJ_HOME="/root/prj"
 
 # General settings
 #
@@ -7,11 +7,7 @@ alias wizard="perl $PRJ_HOME/unix-utils/scripts/wizard.pl"
 
 export PATH=.:$PRJ_HOME/unix-utils/scripts:$PATH
 
-# + Sage settings
-#
-export PATH=/usr/local/bin/sage:$PATH
-
-# + JMeter settings
+# + Jmeter settings
 #
 export PATH=$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
 

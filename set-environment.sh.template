@@ -11,7 +11,7 @@ export PATH=.:$PRJ_HOME/unix-utils/scripts:$PATH
 #
 export PATH=/usr/local/bin/sage:$PATH
 
-# + JMeter settings
+# + Jmeter settings
 #
 export PATH=$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
 
