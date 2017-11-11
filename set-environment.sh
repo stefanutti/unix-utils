@@ -2,10 +2,10 @@ export PRJ_HOME="/mario/prj"
 
 # General settings
 #
-alias goto=". $PRJ_HOME/unix-utils/scripts/goto.sh"
-alias wizard="perl $PRJ_HOME/unix-utils/scripts/wizard.pl"
+alias goto=". $PRJ_HOME/unix-utils/unix-utils/scripts/goto.sh"
+alias wizard="perl $PRJ_HOME/unix-utils/unix-utils/scripts/wizard.pl"
 
-export PATH=.:$PRJ_HOME/unix-utils/scripts:$PATH
+export PATH=.:$PRJ_HOME/unix-utils/unix-utils/scripts:$PATH
 
 # + Sage settings
 #
@@ -13,7 +13,7 @@ export PATH=/usr/local/bin/sage:$PATH
 
 # + JMeter settings
 #
-export PATH=$PRJ_HOME/unix-utils/tools/jmeter/bin:$PATH
+export PATH=$PRJ_HOME/unix-utils/unix-utils/tools/jmeter/bin:$PATH
 
 # + Maven settings
 #
