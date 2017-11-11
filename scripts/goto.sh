@@ -3,10 +3,10 @@
 # Author: Mario Stefanutti
 # History:
 # - 02/Feb/2017: First version
+# - 11/Nov/2017: If first parameter is "." search sub dirs into the current directory
 #
-
 #
-# Usage: alias goto=". /path to .../goto.sh"
+# Usage: alias goto=". /path-to-the-script-dir/goto.sh"
 # Note: Change the GOTO_HOME_DIRS variable
 #
 
@@ -31,8 +31,13 @@ changeDir() {
 
 GOTO_HOME_DIRS="$PRJ_HOME"
 
-DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$1"`
-NUM_DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$1" | wc -l`
+if [ $1 == "." ]; then
+   DIRS=`find . -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$2"`
+   NUM_DIRS=`find . -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$2" | wc -l`
+else
+   DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$1"`
+   NUM_DIRS=`find -L $GOTO_HOME_DIRS -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$1" | wc -l`
+fi
 
 if [ $NUM_DIRS == 0 ]; then
     echo "nothing found"
