@@ -4,6 +4,7 @@
 # History:
 # - 02/Feb/2017: First version
 # - 11/Nov/2017: If first parameter is "." search sub dirs into the current directory
+# - 11/Nov/2017: Fix if input give is null
 #
 #
 # Usage: alias goto=". /path-to-the-script-dir/goto.sh"
@@ -48,6 +49,8 @@ else
     showDirs
     echo "Which number?"
     read LINE
-    changeDir
+    if [ "$LINE" != "" ]; then
+       changeDir
+    fi
 fi
 
