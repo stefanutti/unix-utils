@@ -1,4 +1,4 @@
-export PRJ_HOME="/root/prj"
+export PRJ_HOME="/mario/prj"
 
 # General settings
 #

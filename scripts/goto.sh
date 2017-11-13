@@ -32,7 +32,7 @@ changeDir() {
 
 GOTO_HOME_DIRS="$PRJ_HOME"
 
-if [ $1 == "." ]; then
+if [ "$1" == "." ]; then
    DIRS=`find . -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$2"`
    NUM_DIRS=`find . -maxdepth 3 -type d | grep -v "\-[0-9]\.[0-9]" | grep -v "\/\." | sort | grep -i "$2" | wc -l`
 else
